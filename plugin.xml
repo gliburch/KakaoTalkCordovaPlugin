@@ -60,13 +60,8 @@
 
         <source-file src="src/ios/KakaoTalk.m" />
         <header-file src="src/ios/KakaoTalk.h" />
-        <config-file target="*-Info.plist">
-			<dict>
-				<key>KAKAO_APP_KEY</key>
-				<string>$KAKAO_APP_KEY</string>
-				<key>Kits</key>
-				<array></array>
-			</dict>
+        <config-file target="*-Info.plist" parent="KAKAO_APP_KEY">
+            <string>$KAKAO_APP_KEY</string>
 		</config-file>
 		<config-file target="*-Info.plist" parent="CFBundleURLTypes">
 			<array>
